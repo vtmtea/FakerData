@@ -18,3 +18,8 @@ func TestName(t *testing.T) {
 		time.Sleep(time.Nanosecond)
 	}
 }
+
+func TestEngine_PhoneNumber(t *testing.T) {
+	faker := initialize()
+	fmt.Println(faker.PhoneNumber())
+}
