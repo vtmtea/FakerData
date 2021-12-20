@@ -31,6 +31,6 @@ func (engine *Engine) Name() string {
 	return base.Name(engine.locale)
 }
 
-func PhoneNumber() string {
-	return ""
+func (engine *Engine) PhoneNumber() string {
+	return base.PhoneNumber(engine.locale)
 }
